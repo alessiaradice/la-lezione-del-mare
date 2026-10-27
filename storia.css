@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden; 
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+  }
+  
+  .slide {
+    min-width: 100%; 
+    height: auto;
+    display: block;
+  }
+  
+  .arrow {
+    display: none; 
+    position: absolute;
+    bottom: 30px; 
+    width: 120px; 
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+    transition: opacity 0.5s, transform 0.5s;
+   }
+   
+   .arrow.prev {
+    left: 30px; 
+    content: url("assets/images/introduzione/freccia_sinistra.png"); 
+   }
+   
+   .arrow.prev:hover {
+    transform: scale(1.1); 
+    opacity: 1;
+    content: url("assets/images/introduzione/freccia_sinistra_hover.png"); 
+   }
+   
+   .arrow.next {
+    right: 30px; 
+    content: url("assets/images/introduzione/freccia_destra.png"); 
+   }
+   
+   .arrow.next:hover {
+    transform: scale(1.1); 
+    opacity: 1;
+    content: url("assets/images/introduzione/freccia_destra_hover.png"); 
+   }
+  
+  
+  .final-button {
+    display: none; 
+    position: absolute;
+    bottom: 30px; 
+    right: 30px; 
+    width: 120px; 
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+    transition: opacity 0.5s, transform 0.5s;
+   }
+   
+   .final-button:hover {
+    transform: scale(1.1); 
+    opacity: 1;
+    content: url("assets/images/introduzione/tasto_gioca_post_storia_2.png"); 
+   }
+  
+   .home-button {
+    display: none; 
+    position: absolute;
+    bottom: 30px; 
+    left: 30px; 
+    width: 120px; 
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+    transition: opacity 0.5s, transform 0.5s;
+   }
+   
+   .home-button:hover {
+    transform: scale(1.1); 
+    opacity: 1;
+    content: url("assets/images/introduzione/freccia_sinistra_hover.png"); 
+   }
